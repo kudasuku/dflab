@@ -1,0 +1,225 @@
+/* GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+	font-family: 'Poppins', sans-serif;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    line-height: 1.2;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:black;
+}
+/*proses susun */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("backg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*proses dimana mula naikkan keatas*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*proses menyusun sebaris melintang dan color 4 tersebut*/
+header.logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color:#fff;
+    font-weight: 600;
+    margin-left: 30px;
+    text-decoration:underline;
+}
+
+/*proses gambar ke bawah jadi ke kiri kemas*/
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2{
+    color:whitesmoke;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textbox h2 span{
+    color: rgb(255, 115, 0);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textbox p{
+    color: #fff;
+}
+/*Button learn more*/
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: orangered;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    text-decoration: double;
+}
+/*Gambar products*/
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 340px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform:translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+max-width: 120px;
+}
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: black;
+    padding: 60px 10%;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+}
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: antiquewhite;
+    text-transform: capitalize;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: orangered;
+    height: 2px;
+    width: 40px;
+}
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.links a:hover{
+    color: #4d4f55;
+    background-color: orangered;
+}
+@media(max-width:740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-col h4::before{
+        all: unset;
+
+    }
+}
+@media(max-width:555px){
+    .footer-col{
+        width: 100%;
+    }       
+}
+#site-info {
+	
+	width: 100%;
+
+	text-align: center;
+	background: #000000;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	line-height: 1.9em;
+}
+
+
+
+
